@@ -342,4 +342,15 @@ h4 {
   position: absolute;
   top: 13px;
   }
+  .hello {
+  background: linear-gradient(
+    318.68deg,
+    #000000 0%,
+    #000000 20%,
+    #000000 40%,
+    #000000 60%,
+    #000000 80%,
+    #000000 100%
+    );
+  }
 }
