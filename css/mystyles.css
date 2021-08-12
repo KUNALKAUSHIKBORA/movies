@@ -270,7 +270,7 @@ h4 {
 }
 .effectText {
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: bold;
   left: 50%;
   position: relative;
@@ -324,5 +324,18 @@ h4 {
 
   .categories .sub-text {
     font-size: 3vw;
+  }
+  
+  .videoEffect {
+  background: url('../images/IMac Pro.png') no-repeat center center / cover;
+  width: 250px;
+  height: 230px;
+  position: absolute;
+  }
+.videoEffect video {
+  width: 250px;
+  height: 325px;
+  position: absolute;
+  top: -73px;
   }
 }
