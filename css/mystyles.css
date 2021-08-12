@@ -326,16 +326,20 @@ h4 {
     font-size: 3vw;
   }
   
+  .hello {
+    height: 250px;
+  }
+
   .videoEffect {
   background: url('../images/IMac Pro.png') no-repeat center center / cover;
-  width: 250px;
-  height: 230px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   }
 .videoEffect video {
-  width: 250px;
-  height: 325px;
+  width: 200px;
+  height: 150px;
   position: absolute;
-  top: -73px;
+  top: 13px;
   }
 }
