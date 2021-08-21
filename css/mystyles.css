@@ -277,6 +277,24 @@ h4 {
 }
 
 
+/* footer */
+footer {
+  background-color: #000;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+.footer a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+.footer a i {
+  padding: 10px;
+}
+
+
 /* media query */
 @media (min-width: 769px) and (max-width: 1199px) {
   .categories .covers {
