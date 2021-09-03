@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  min-width: 135px;
+  padding: 16px 28px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 14px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+.btn-cta:hover {
+  opacity: 0.8;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+h4 {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.legal-text {
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+
+.header {
+  height: 530px;
+  background: url('../images/header.jpg') no-repeat center center / cover;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.76) 15.54%,
+    rgba(0, 0, 0, 0.192) 60.23%,
+    rgba(0, 0, 0, 8e-5) 100%
+    );
+}
+
+.header .logo {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.header .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header .header-content img {
+  margin-top: 60px;
+}
+
+.header .header-text-1 {
+  font-size: 16px;
+  color: #00CC99;
+  text-transform: uppercase;
+}
+
+/* sub header */
+.sub-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-column-gap: 0px;
+  align-items: center;
+  padding: 0px 15px;
+  z-index: -1;
+  background: linear-gradient(
+    318.68deg,
+    #b3005c 0%,
+    #99004f 20%,
+    #800042 40%,
+    #660035 60%,
+    #4d0028 80%,
+    #33001a 100%
+    );
+}
+
+.sub-header img {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.categories .sub-text {
+  font-size: 3vw;
+  color: #fff;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+#search {
+  width: 80%;
+  height: 50px;
+  margin-top: 0px;
+  border-radius: 5px;
+  border: 2px solid #660033;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+
+#search:focus {
+  border-color: 2px solid #660033;
+  outline: none;
+}
+
+.categories:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url('../images/moviesPoster.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.categories .covers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.categories .covers > div {
+  height: 500px;
+  width: 300px;
+  position: relative;
+}
+
+.categories .cover-grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background: linear-gradient(
+    156.82deg,
+    rgba(0, 0, 0.6) 4.58%,
+    rgba(0, 0, 0, 0) 69.61%
+    ),
+  linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.categories .cover-grad:hover {
+  opacity: .5;
+}
+
+.categories .cover-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+
+.categories .cover-1 {
+  background: url("../images/NoTimeToDie.jpg") no-repeat center center / cover;
+  transition: 0.5s;
+}
+
+.categories .cover-2 {
+  background: url("../images/the witcher.jpg") no-repeat center center / cover;
+}
+
+.categories .cover-3 {
+  background: url("../images/How to.jpg") no-repeat center center / cover;
+}
+
+.categories .cover-4 {
+  background: url("../images/avengers.jpg") no-repeat center center / cover;
+}
+
+/* effect */
+.hello {
+  width: 100%;
+  height: 350px;
+  padding: 50px;
+  position: relative;
+  background: linear-gradient(
+    318.68deg,
+    #333333 0%,
+    #0d0d0d 20%,
+    #333333 40%,
+    #000000 60%,
+    #000000 80%,
+    #000000 100%
+    );
+  display: flex;
+  align-items: center;
+}
+.videoEffect {
+  background: url('../images/IMac Pro.png') no-repeat center center / cover;
+  width: 350px;
+  height: 300px;
+  position: absolute;
+}
+.videoEffect video {
+  width: 350px;
+  height: 370px;
+  position: absolute;
+  top: -68px;
+}
+.effectText {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  left: 50%;
+  position: relative;
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+footer h1 {
+  text-align: center;
+  height: 30px;
+}
+.footer a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+.footer a i {
+  padding: 10px;
+}
+.policy h1 {
+  font-size: 14px;
+}
+footer .social {
+  text-align: center;
+}
+.social a i {
+  transition: 1s;
+}
+.social a i:hover {
+  transform: scale(1.4);
+  color: #99ffff;
+}
+
+
+
+
+/* media query */
+@media (min-width: 1200px) {
+  .horizontalRule {
+    display: none;
+  }
+  .footer {
+    height: 40vh;
+  }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  .categories .covers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .horizontalRule {
+    display: none;
+  }
+  .footer a {
+    font-size: 12px;
+  }
+  .policy h1 {
+  font-size: 12px;
+}
+.footer {
+  height: 40vh;
+}
+}
+
+@media (max-width: 768px) {
+  .header .logo {
+    width: 200px;
+  }
+
+  .header .header-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .header .header-content img {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
+
+  .sub-header {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+
+  .sub-header img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .sub-header > div:last-of-type {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .categories .covers {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .categories .sub-text {
+    font-size: 3vw;
+  }
+
+  .hello {
+    height: 250px;
+  }
+
+  .videoEffect {
+  background: url('../images/IMac Pro.png') no-repeat center center / cover;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  }
+.videoEffect video {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 13px;
+  }
+  .footer {
+    display: block;
+  }
+  .about,
+  .policy,
+  .social {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+}
