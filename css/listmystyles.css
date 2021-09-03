@@ -251,3 +251,17 @@ input[type=submit] {
   opacity: 0.1;
 }
 
+/* Media Queries */
+@media(min-width: 576px) and (max-width: 767.98px) {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 575.98px) {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}
