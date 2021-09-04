@@ -201,7 +201,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -220,6 +220,9 @@ window.goMovies = function(){
         break;
         case 'Jungle Cruise':
         window.location.href = "movies/jungle cruise.html";
+        break;
+        case 'The Tomorrow War':
+        window.location.href = "movies/the tomorrow war.html";
         break;
         default:
         alert("notify invalid");
