@@ -1,0 +1,23 @@
+﻿body {
+	background-color: #000;
+}
+h1 {
+	color: #fff;
+}
+
+h2 a {
+	color: #fff;
+	text-decoration: none;
+	transition: 1s;
+}
+h2 a:hover {
+	color: #cc0066;
+}
+h1 {
+	display: flex;
+	justify-content: center;
+}
+h2 {
+	display: flex;
+	justify-content: center;
+}
