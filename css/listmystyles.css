@@ -88,6 +88,9 @@ input[type=submit] {
   top: 100%;
   left: 0;
   right: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 .autocomplete-items div {
   padding: 10px;
