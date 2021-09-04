@@ -229,7 +229,7 @@ h4 {
 
 
 .categories .cover-1 {
-  background: url("../images/NoTimeToDie.jpg") no-repeat center center / cover;
+  background: url("../images/avengers.jpg") no-repeat center center / cover;
   transition: 0.5s;
 }
 
@@ -242,7 +242,7 @@ h4 {
 }
 
 .categories .cover-4 {
-  background: url("../images/avengers.jpg") no-repeat center center / cover;
+  background: url("../images/shershah.jpg") no-repeat center center / cover;
 }
 
 /* effect */
