@@ -40,6 +40,16 @@
         </div>
         <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
             <figure class="snip1273">
+            <img src="images/mortal combat.jpg" alt="mortal combat"/>
+            <figcaption>
+            <h3>Black Widow</h3>
+            <p>Hunted by the fearsome warrior Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. Training with experienced fighters Liu Kang, Kung Lao and the rogue mercenary Kano, Cole prepares to stand with Earth's greatest champions to take on the enemies from Outworld in a high-stakes battle for the universe.</p>
+            </figcaption>
+            <a href="movies/mortal combat.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
             <img src="images/black widow.jpg" alt="black widow"/>
             <figcaption>
             <h3>Black Widow</h3>
@@ -241,7 +251,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "Avengers-EndGame", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "Avengers-EndGame", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -278,6 +288,9 @@ window.goMovies = function(){
         break;
         case 'Black Widow':
         window.location.href = "movies/black widow.html";
+        break;
+        case 'Mortal Combat':
+        window.location.href = "movies/mortal combat.html";
         break;
         case 'The Tomorrow War':
         window.location.href = "movies/the tommorow war.html";
