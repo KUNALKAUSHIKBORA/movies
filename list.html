@@ -80,6 +80,16 @@
         </div>
         <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
             <figure class="snip1273">
+            <img src="images/nomadland.jpg" alt="nomadland"/>
+            <figcaption>
+            <h3>Nomadland</h3>
+            <p>A woman in her sixties who, after losing everything in the Great Recession, embarks on a journey through the American West, living as a van-dwelling modern-day nomad.</p>
+            </figcaption>
+            <a href="movies/nomadland.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
             <img src="images/the witcher.jpg" alt="the witcher"/>
             <figcaption>
             <h3>The Witcher</h3>
@@ -251,7 +261,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "Avengers-EndGame", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "Avengers-EndGame", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -270,6 +280,9 @@ window.goMovies = function(){
         break;
         case 'Wonder Woman-1984':
         window.location.href = "movies/wonder woman.html";
+        break;
+        case 'Nomadland':
+        window.location.href = "movies/nomadland.html";
         break;
         case 'How To Train Your Dragon':
         window.location.href = "movies/how to train your dragon.html";
