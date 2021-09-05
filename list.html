@@ -40,6 +40,16 @@
         </div>
         <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
             <figure class="snip1273">
+            <img src="images/godzilla vs kong.jpg" alt="godzilla vs kong"/>
+            <figcaption>
+            <h3>Godzilla vs Kong</h3>
+            <p>King Kong is transported out of his containment zone after Godzilla resurfaces and creates mayhem. Humans need his help to reach Hollow Earth and find a way to subdue the king of the monsters.</p>
+            </figcaption>
+            <a href="godzilla vs kong.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
             <img src="images/the witcher.jpg" alt="the witcher"/>
             <figcaption>
             <h3>The Witcher</h3>
@@ -221,7 +231,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "Avengers-EndGame", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "Avengers-EndGame", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -252,6 +262,9 @@ window.goMovies = function(){
         break;
         case 'Jungle Cruise':
         window.location.href = "movies/jungle cruise.html";
+        break;
+        case 'Godzilla Vs Kong':
+        window.location.href = "movies/godzilla vs kong.html";
         break;
         case 'The Tomorrow War':
         window.location.href = "movies/the tommorow war.html";
