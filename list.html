@@ -50,6 +50,16 @@
         </div>
         <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
             <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+conjuring+2021.jpg" alt="the conjuring"/>
+            <figcaption>
+            <h3>The Suicide Squad (2021)</h3>
+            <p>The government sends the most dangerous supervillains in the world -- Bloodsport, Peacemaker, King Shark, Harley Quinn and others -- to the remote, enemy-infused island of Corto Maltese. Armed with high-tech weapons, they trek through the dangerous jungle on a search-and-destroy mission, with only Col. Rick Flag on the ground to make them behave.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+conjuring.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
             <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+croods.jpg" alt="the conjuring"/>
             <figcaption>
             <h3>The Croods: A New Age</h3>
@@ -291,7 +301,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -336,6 +346,9 @@ window.goMovies = function(){
         window.location.href = "movies/black widow.html";
         break;
         case 'Mortal Combat':
+        window.location.href = "movies/mortal combat.html";
+        break;
+        case 'The Suicide Squad (2021)':
         window.location.href = "movies/mortal combat.html";
         break;
         case 'The Conjuring: The Devil Made Me Do It':
