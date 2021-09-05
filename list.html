@@ -140,6 +140,16 @@
         </div>
         <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
             <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+father.jpg" alt="thefather"/>
+            <figcaption>
+            <h3>The Father</h3>
+            <p>A man refuses all assistance from his daughter as he ages. As he tries to make sense of his changing circumstances, he begins to doubt his loved ones, his own mind and even the fabric of his reality.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+father.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
             <img src="images/the witcher.jpg" alt="the witcher"/>
             <figcaption>
             <h3>The Witcher</h3>
@@ -311,7 +321,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Tomorrow War", "Tom and Jerry (2021)", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Father", "The Tomorrow War", "Tom and Jerry (2021)", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -369,6 +379,9 @@ window.goMovies = function(){
         break;
         case 'Tom and Jerry':
         window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/tom+and+jerry.html";
+        break;
+        case 'The Father':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+father.html";
         break;
         case 'The Tomorrow War':
         window.location.href = "movies/the tommorow war.html";
