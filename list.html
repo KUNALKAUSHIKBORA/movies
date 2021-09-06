@@ -140,6 +140,16 @@
         </div>
         <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
             <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/escape+room.jpg" alt="escape room"/>
+            <figcaption>
+            <h3>Escape Room</h3>
+            <p>Six people from different walks of life participate in an escape room competition to win ten thousand dollars. Things change when they find themselves in horrifying circumstances.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/escape+room.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
             <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+father.jpg" alt="thefather"/>
             <figcaption>
             <h3>The Father</h3>
@@ -321,7 +331,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "The Father", "The Tomorrow War", "Tom and Jerry (2021)", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "Escape Room", "The Father", "The Tomorrow War", "Tom and Jerry (2021)", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -385,6 +395,9 @@ window.goMovies = function(){
         break;
         case 'The Tomorrow War':
         window.location.href = "movies/the tommorow war.html";
+        break;
+        case 'Escape Room':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/escape+room.html";
         break;
         default:
         alert("notify invalid");
