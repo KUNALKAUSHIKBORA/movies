@@ -3,11 +3,26 @@
 <head>
 	<title>far from home</title>
 	<link rel="stylesheet" href="css/mymoviestyles.css"/>
+	<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
 </head>
 <body>
-	<h1>
-		<img src="images/far from home.jpg">
-	</h1>
-	<h2><a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies+main/Spider-Man.Far.from.Home.2019.720p.10bit.BluRay.6CH.x265.HEVC-PSA.mkv">Download</a></h2>
+	<video
+    	id="my-video"
+    	class="video-js vjs-big-play-centered vjs-fluid"
+    	controls
+    	preload="auto"
+	poster="images/far from home.jpg"
+    	data-setup="{}">
+    	<source src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies+main/Spider-Man.Far.From.Home.2019.720p.BluRay.x264-%5BYTS.LT%5D.mp4" type="video/mp4" />
+    	<p class="vjs-no-js">
+      	To view this video please enable JavaScript, and consider upgrading to a
+      	web browser that
+      	<a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a>
+    	</p>
+  	</video>
+    	
+	<h2><a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies+main/Spider-Man.Far.From.Home.2019.720p.BluRay.x264-%5BYTS.LT%5D.mp4">Download</a></h2>
+<script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
 </body>
 </html>
