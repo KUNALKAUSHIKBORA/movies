@@ -3,11 +3,26 @@
 <head>
 	<title>jungle cruise</title>
 	<link rel="stylesheet" href="css/mymoviestyles.css"/>
+	<link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
 </head>
 <body>
-	<h1>
-		<img src="images/jungle cruise.jpg">
-	</h1>
-	<h2><a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies+main/Jungle.Cruise.2021.720p.10bit.WEBRip.6CH.x265.HEVC-PSA.mkv">Download</a></h2>
+	<video
+    	id="my-video"
+    	class="video-js vjs-big-play-centered vjs-fluid"
+    	controls
+    	preload="auto"
+	poster="images/jungle cruise.jpg"
+    	data-setup="{}">
+    	<source src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies+main/Jungle+Cruise+(2021)+English.mkv" type="video/mp4" />
+    	<p class="vjs-no-js">
+      	To view this video please enable JavaScript, and consider upgrading to a
+      	web browser that
+      	<a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a>
+    	</p>
+  	</video>
+    	
+	<h2><a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies+main/Jungle+Cruise+(2021)+English.mkv">Download</a></h2>
+<script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
 </body>
 </html>
