@@ -40,6 +40,16 @@
         </div>
         <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
             <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/money-heist-season-5.jpeg" alt="money heist"/>
+            <figcaption>
+            <h3>Money Heist Season-5</h3>
+            <p>A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose. The group of thieves take hostages to aid in their negotiations with the authorities, who strategize to come up with a way to capture The Professor. As more time elapses, the robbers prepare for a showdown with the police</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/money+heist+season+5.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
             <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/tom+and+jerry.jpg"/>
             <figcaption>
             <h3>Tom and Jerry (2021)</h3>
@@ -341,7 +351,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "Escape Room", "Yeh Sali Aashiqui", "The Father", "The Tomorrow War", "Tom and Jerry (2021)", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "Money Heist Season-5", "Escape Room", "Yeh Sali Aashiqui", "The Father", "The Tomorrow War", "Tom and Jerry (2021)", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), countries);
@@ -411,6 +421,9 @@ window.goMovies = function(){
         break;
         case 'Escape Room':
         window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/escape+room.html";
+        break;
+        case 'Money Heist Season-5':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/money+heist+season+5.html";
         break;
         default:
         alert("notify invalid");
