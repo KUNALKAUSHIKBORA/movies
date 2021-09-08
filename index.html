@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <body>
+    
+    <span id="wifiOffline" class="large material-icons">wifi_off</span>
+    <span id="wifiOnline" class="large material-icons">wifi</span>
 
     <header class="header">
 
@@ -147,6 +150,23 @@
 
     </footer>
 
+    
+  <script type="text/javascript">
+    window.addEventListener('online', updateStatus);
+    window.addEventListener('offline', updateStatus);
 
+    function updateStatus() {
+      if (navigator.onLine) {
+        document.getElementById('wifiOnline').style.visibility = 'visible';
+        document.getElementById('wifiOffline').style.visibility = 'hidden';
+      }
+      else {
+        document.getElementById('wifiOnline').style.visibility = 'hidden';
+        document.getElementById('wifiOffline').style.visibility = 'visible';
+      }
+    };
+
+    updateStatus();
+  </script>
   </body>
 </html>
