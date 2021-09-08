@@ -4,8 +4,12 @@
     <title>List</title>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/listmystyles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    
+    <span id="wifiOffline" class="large material-icons">wifi_off</span>
+    <span id="wifiOnline" class="large material-icons">wifi</span>
 
     <header class="header">
     <div class="mainWallpaper"></div>
@@ -429,6 +433,22 @@ window.goMovies = function(){
         alert("notify invalid");
       }
     }
+    
+    window.addEventListener('online', updateStatus);
+    window.addEventListener('offline', updateStatus);
+
+    function updateStatus() {
+      if (navigator.onLine) {
+        document.getElementById('wifiOnline').style.visibility = 'visible';
+        document.getElementById('wifiOffline').style.visibility = 'hidden';
+      }
+      else {
+        document.getElementById('wifiOnline').style.visibility = 'hidden';
+        document.getElementById('wifiOffline').style.visibility = 'visible';
+      }
+    };
+
+    updateStatus();
 </script>
 </body>
 </html>
