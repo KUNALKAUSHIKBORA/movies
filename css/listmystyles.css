@@ -296,7 +296,9 @@ input[type=submit] {
 }
 #wifiOnline {
   color: #1ac6ff;
+  padding: 5px;
 }
 #wifiOffline {
   color: #cc0000;
+  padding: 5px;
 }
