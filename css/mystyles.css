@@ -417,3 +417,15 @@ footer .social {
     height: 30vh;
 }
 }
+
+/* Internet Status */
+.material-icons {
+  position: absolute;
+  z-index: 1000;
+}
+#wifiOnline {
+  color: #1ac6ff;
+}
+#wifiOffline {
+  color: #cc0000;
+}
