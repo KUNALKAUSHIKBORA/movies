@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies List</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/listmystyles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <span id="wifiOffline" class="large material-icons">wifi_off</span>
+    <span id="wifiOnline" class="large material-icons">wifi</span>
+
+    <header class="header">
+    <div class="mainWallpaper"></div>
+      <div class="header-content">
+        <img src="images/mymovie5.png" alt="moviesAwesome" class="logo">
+      </div>
+    </header>
+
+    
+    <form autocomplete="off" style="text-align: center;">
+        <div class="autocomplete" style="width: 80%;">
+            <input id="myInput" type="text" name="myCountry" placeholder="Search Your Favorite Shows...">
+        </div>
+
+        <div class="helloSubmit">
+        <div id="submitSwitch" onclick="goMovies()">Submit</div>
+        </div>
+            
+   </form>
+
+    <div class="container-fluid">
+    <div class="row">
+        <div style="display: none;" class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/NoTimeToDie.jpg" alt="NoTimeToDie"/>
+            <figcaption>
+            <h3>No Time To Die</h3>
+            <p>Recruited to rescue a kidnapped scientist, globe-trotting spy James Bond finds himself hot on the trail of a mysterious villain, who's armed with a dangerous new technology.</p>
+            </figcaption>
+            <a href="#"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/money-heist-season-5.jpeg" alt="money heist"/>
+            <figcaption>
+            <h3>Money Heist Season-5</h3>
+            <p>A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose. The group of thieves take hostages to aid in their negotiations with the authorities, who strategize to come up with a way to capture The Professor. As more time elapses, the robbers prepare for a showdown with the police</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/money+heist+season+5.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/tom+and+jerry.jpg"/>
+            <figcaption>
+            <h3>Tom and Jerry (2021)</h3>
+            <p>A legendary rivalry reemerges when Jerry moves into New York City's finest hotel on the eve of the wedding of the century, forcing the desperate event planner to hire Tom to get rid of him. As mayhem ensues, the escalating cat-and-mouse battle soon threatens to destroy her career, the wedding, and possibly the hotel itself.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/tom+and+jerry.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+conjuring+2021.jpg" alt="the conjuring"/>
+            <figcaption>
+            <h3>The Conjuring: The Devil Made Me Do It</h3>
+            <p>Paranormal investigators Ed and Lorraine Warren take on one of the most sensational cases of their careers after a cop stumbles upon a dazed and bloodied young man walking down the road. Accused of murder, the suspect claims demonic possession as his defense, forcing the Warrens into a supernatural inquiry unlike anything they've ever seen before.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+conjuring.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+suicide+squad+2021.jpg" alt="the conjuring"/>
+            <figcaption>
+            <h3>The Suicide Squad (2021)</h3>
+            <p>The government sends the most dangerous supervillains in the world -- Bloodsport, Peacemaker, King Shark, Harley Quinn and others -- to the remote, enemy-infused island of Corto Maltese. Armed with high-tech weapons, they trek through the dangerous jungle on a search-and-destroy mission, with only Col. Rick Flag on the ground to make them behave.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+suicide+squad.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+croods.jpg" alt="the conjuring"/>
+            <figcaption>
+            <h3>The Croods: A New Age</h3>
+            <p>Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a couple of steps above the Croods on the evolutionary ladder. As tensions between the new neighbors start to rise, a new threat soon propels both clans on an epic adventure that forces them to embrace their differences, draw strength from one another, and survive together.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+croods.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/mortal combat.jpg" alt="mortal combat"/>
+            <figcaption>
+            <h3>Black Widow</h3>
+            <p>Hunted by the fearsome warrior Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. Training with experienced fighters Liu Kang, Kung Lao and the rogue mercenary Kano, Cole prepares to stand with Earth's greatest champions to take on the enemies from Outworld in a high-stakes battle for the universe.</p>
+            </figcaption>
+            <a href="movies/mortal combat.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/shershah.jpg" alt="shershah"/>
+            <figcaption>
+            <h3>Shershaah</h3>
+            <p>The life of Indian army captain Vikram Batra, awarded with the Param Vir Chakra, India's highest award for valour for his actions during the 1999 Kargil War.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/shershaah.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/black widow.jpg" alt="black widow"/>
+            <figcaption>
+            <h3>Black Widow</h3>
+            <p>Natasha Romanoff, aka Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy, and the broken relationships left in her wake long before she became an Avenger.</p>
+            </figcaption>
+            <a href="movies/black widow.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/jungle cruise.jpg" alt="avengers"/>
+            <figcaption>
+            <h3>Jungle Cruise</h3>
+            <p>Dr. Lily Houghton enlists the aid of wisecracking skipper Frank Wolff to take her down the Amazon in his ramshackle boat. Together, they search for an ancient tree that holds the power to heal -- a discovery that will change the future of medicine.</p>
+            </figcaption>
+            <a href="movies/jungle cruise.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/godzilla vs kong.jpg" alt="godzilla vs kong"/>
+            <figcaption>
+            <h3>Godzilla vs Kong</h3>
+            <p>King Kong is transported out of his containment zone after Godzilla resurfaces and creates mayhem. Humans need his help to reach Hollow Earth and find a way to subdue the king of the monsters.</p>
+            </figcaption>
+            <a href="movies/godzilla vs kong.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/nomadland.jpg" alt="nomadland"/>
+            <figcaption>
+            <h3>Nomadland</h3>
+            <p>A woman in her sixties who, after losing everything in the Great Recession, embarks on a journey through the American West, living as a van-dwelling modern-day nomad.</p>
+            </figcaption>
+            <a href="movies/nomadland.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/escape+room.jpg" alt="escape room"/>
+            <figcaption>
+            <h3>Escape Room</h3>
+            <p>Six people from different walks of life participate in an escape room competition to win ten thousand dollars. Things change when they find themselves in horrifying circumstances.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/escape+room.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/yeh+sali+aashiqui.jpg"/>
+            <figcaption>
+            <h3>Yeh Sali Aashiqui</h3>
+            <p>A supposedly deranged man is arrested on suspicion of breaking into his ex-lover's home. But when he starts talking, he appears to be far more intelligent and twisted than anyone could have predicted.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/yeh+sali+aashiqui.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/the+father.jpg" alt="thefather"/>
+            <figcaption>
+            <h3>The Father</h3>
+            <p>A man refuses all assistance from his daughter as he ages. As he tries to make sense of his changing circumstances, he begins to doubt his loved ones, his own mind and even the fabric of his reality.</p>
+            </figcaption>
+            <a href="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+father.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/the witcher.jpg" alt="the witcher"/>
+            <figcaption>
+            <h3>The Witcher</h3>
+            <p>The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.</p>
+            </figcaption>
+            <a href="movies/the witcher.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/cover-4.jpg" alt="cover-4"/>
+            <figcaption>
+            <h3>Wonder Woman</h3>
+            <p>Wonder Woman finds herself battling two opponents, Maxwell Lord, a shrewd entrepreneur, and Barbara Minerva, a friend-turned-foe. Meanwhile, she also ends up crossing paths with her love interest.</p>
+            </figcaption>
+            <a href="movies/wonder woman.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/How to.jpg" alt="How to"/>
+            <figcaption>
+            <h3>How To Train Your Dragon</h3>
+            <p>Hiccup, a Viking, must kill a dragon to mark his passage into manhood and be initiated into his tribe. However, he ends up doing the exact opposite by befriending a deadly dragon, Night Fury.</p>
+            </figcaption>
+            <a href="movies/how to train your dragon.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/images/avengers.jpg" alt="avengers"/>
+            <figcaption>
+            <h3>Avengers-EndGame</h3>
+            <p>After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</p>
+            </figcaption>
+            <a href="movies/avengers-endgame.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/The_Tomorrow_War_(2021_film)_official_theatrical_poster.jpg" alt="The_Tomorrow_War"/>
+            <figcaption>
+            <h3>The Tomorrow War</h3>
+            <p>The world is stunned when a group of time travellers arrive from the year 2051 to deliver an urgent message: thirty years in the future, mankind is losing a global war against a deadly alien species.</p>
+            </figcaption>
+            <a href="movies/the tommorow war.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/far from home.jpg" alt="far from home"/>
+            <figcaption>
+            <h3>SPIDER-MAN Far From Home</h3>
+            <p>Peter Parker, the beloved superhero Spider-Man, faces four destructive elemental monsters while on holiday in Europe. Soon, he receives help from Mysterio, a fellow hero with mysterious origins.</p>
+            </figcaption>
+            <a href="movies/far from home.html"></a>
+            </figure>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-12 col-sm-12 col-xs-12 movieList">
+            <figure class="snip1273">
+            <img src="images/homecoming.jpg" alt="homecoming"/>
+            <figcaption>
+            <h3>SPIDER-MAN Homecoming</h3>
+            <p>Peter Parker tries to stop the Vulture from selling weapons made with advanced Chitauri technology while trying to balance his life as an ordinary high school student.</p>
+            </figcaption>
+            <a href="movies/homecoming.html"></a>
+            </figure>
+        </div>
+    </div>
+    </div>
+
+<script type="text/javascript">
+
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = ["No Time To Die", "Wonder Woman-1984", "The Witcher", "How To Train Your Dragon", "Jungle Cruise", "Money Heist Season-5", "Escape Room", "Yeh Sali Aashiqui", "The Father", "The Tomorrow War", "Tom and Jerry (2021)", "The Suicide Squad (2021)", "The Croods: A New Age", "The Conjuring: The Devil Made Me Do It", "Avengers-EndGame", "Shershaah", "Nomadland", "Mortal Combat", "SPIDER-MAN Homecoming", "SPIDER-MAN Far From Home", "Godzilla Vs Kong", "Black Widow"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+
+window.goMovies = function(){
+      var input = document.getElementById("myInput").value;
+      switch(input) {
+        case 'No Time To Die':
+        window.location.href = "movies/no time to die.html";
+        break;
+        case 'Yeh Sali Aashiqui':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/yeh+sali+aashiqui.html";
+        break;
+        case 'The Witcher':
+        window.location.href = "movies/the witcher.html";
+        break;
+        case 'Avengers-EndGame':
+        window.location.href = "movies/avengers-endgame.html";
+        break;
+        case 'Wonder Woman-1984':
+        window.location.href = "movies/wonder woman.html";
+        break;
+        case 'Shershaah':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/shershaah.html";
+        break;
+        case 'Nomadland':
+        window.location.href = "movies/nomadland.html";
+        break;
+        case 'How To Train Your Dragon':
+        window.location.href = "movies/how to train your dragon.html";
+        break;
+        case 'SPIDER-MAN Homecoming':
+        window.location.href = "movies/homecoming.html";
+        break;
+        case 'SPIDER-MAN Far From Home':
+        window.location.href = "movies/far from home.html";
+        break;
+        case 'Jungle Cruise':
+        window.location.href = "movies/jungle cruise.html";
+        break;
+        case 'Godzilla Vs Kong':
+        window.location.href = "movies/godzilla vs kong.html";
+        break;
+        case 'Black Widow':
+        window.location.href = "movies/black widow.html";
+        break;
+        case 'Mortal Combat':
+        window.location.href = "movies/mortal combat.html";
+        break;
+        case 'The Suicide Squad (2021)':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+suicide+squad.html";
+        break;
+        case 'The Conjuring: The Devil Made Me Do It':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+conjuring.html";
+        break;
+        case 'The Croods: A New Age':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+croods.html";
+        break;
+        case 'Tom and Jerry':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/tom+and+jerry.html";
+        break;
+        case 'The Father':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/the+father.html";
+        break;
+        case 'The Tomorrow War':
+        window.location.href = "movies/the tommorow war.html";
+        break;
+        case 'Escape Room':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/escape+room.html";
+        break;
+        case 'Money Heist Season-5':
+        window.location.href = "https://moviesawesome.s3.ap-south-1.amazonaws.com/my+movie/movies/money+heist+season+5.html";
+        break;
+        default:
+        alert("notify invalid");
+      }
+    }
+    
+    window.addEventListener('online', updateStatus);
+    window.addEventListener('offline', updateStatus);
+
+    function updateStatus() {
+      if (navigator.onLine) {
+        document.getElementById('wifiOnline').style.visibility = 'visible';
+        document.getElementById('wifiOffline').style.visibility = 'hidden';
+      }
+      else {
+        document.getElementById('wifiOnline').style.visibility = 'hidden';
+        document.getElementById('wifiOffline').style.visibility = 'visible';
+      }
+    };
+
+    updateStatus();
+</script>
+</body>
+</html>
